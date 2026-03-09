@@ -1,0 +1,190 @@
+<html>
+<head>
+</head>
+<body>
+<h3><a href="home.html"></a></h3>
+<link rel="stylesheet" href="style.css">
+<nav>
+<ul class="nav">
+<li><a href="home.html"><i class="fas fa-home"></i>
+<span class="nav-item">Home</span></a></li>
+
+<li><a href="profile.html"><i class="fas fa-user"></i>
+<span class="nav-item">Profile</span></a></li>
+
+<li><a href="veg.html"><i class="fas fa-veg"></i>
+<span class="nav-item">Veg</span></a></li>
+
+<li><a href="nonveg.html"><i class="fas fa-nonveg"></i>
+<span class="nav-item">Nonveg</span></a></li>
+
+<li><a href="sweet.html"><i class="fas fa-sweet"></i>
+<span class="nav-item">Sweet n Savory</span></a></li>
+
+<li><a href="restaurant.html"><i class="fas fa-restaurant"></i>
+<span class="nav-item">Restaurant</span></a></li>
+
+<li class="nav-search">
+<form class="search-bar">
+<input type="search" id="searchInput" placeholder="Search..." onkeyup="searchFood()">
+<button type="submit">
+<img src="searchicon.png">
+</button>
+</form>
+</li>
+
+</ul>
+</nav>
+
+<header class="header-res">
+    <h1>🍽️ Moodie Foodie</h1>
+    <p>Order from your favorite restaurant</p>
+</header>
+
+<section class="restaurant-grid">
+
+<!-- Restaurant 1 -->
+<div class="res-food-card">
+    <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d">
+    <div class="food-details">
+        <h2>Italian Pizza Hub</h2>
+        <p>⭐ 4.5 </p>
+        <p>Bandra West,Mumbai</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 2 -->
+<div class="res-food-card">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <div class="food-details">
+        <h2>Burger Town</h2>
+        <p>⭐ 4.2 </p>
+        <p>Kurla West,Mumbai</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 3 -->
+<div class="res-food-card">
+    <img src="spicy_indian_kitchen..jpg">
+    <div class="food-details">
+        <h2>Spicy Indian Kitchen</h2>
+        <p>⭐ 4.7 </p>
+        <p>Bandra kurla complex,Mumbai</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 4 -->
+<div class="res-food-card">
+    <img src="chinese.jpg">
+    <div class="food-details">
+        <h2>Dragon Chinese</h2>
+        <p>⭐ 4.3 </p>
+        <p>Dadar West</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 5 -->
+<div class="res-food-card">
+    <img src="biryani_house.jpg" alt="biryani house">
+    <div class="food-details">
+        <h2>Royal Biryani House</h2>
+        <p>⭐ 4.6 </p>
+        <p>Andheri East</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 6 -->
+<div class="res-food-card">
+    <img src="tiffin.jpg" alt="madras tiffin center">
+    <div class="food-details">
+        <h2>Madras Tiffin Center</h2>
+        <p>⭐ 4.4 </p>
+        <p>Panvel</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 7 -->
+<div class="res-food-card">
+    <img src="icecream.jpg" alt="cool creams">
+    <div class="food-details">
+        <h2>Cool Creams</h2>
+        <p>⭐ 4.3 </p>
+        <p>Santacruz</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 8 -->
+<div class="res-food-card">
+    <img src="urban.jpg" alt="urban">
+    <div class="food-details">
+        <h2>Urban Food Court</h2>
+        <p>⭐ 4.5 </p>
+        <p>Goregaon,East</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+<!-- Restaurant 9 -->
+<div class="res-food-card">
+    <img src="99pancakes.jpg" alt="99 Pancakes">
+    <div class="food-details">
+        <h2>99 Pancakes</h2>
+        <p>⭐ 4.6 </p>
+        <p>Thane</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 10 -->
+<div class="res-food-card">
+    <img src="cheesecake.jpg" alt="Love & Cheesecake">
+    <div class="food-details">
+        <h2>Love & Cheesecake</h2>
+        <p>⭐ 4.7 </p>
+        <p>Bhiwandi</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 11 -->
+<div class="res-food-card">
+    <img src="theo.jpg" alt="Theobroma">
+    <div class="food-details">
+        <h2>Theobroma</h2>
+        <p>⭐ 4.8 </p>
+        <p>Naigaon</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+
+<!-- Restaurant 12 -->
+<div class="res-food-card">
+    <img src="waffle.jpg" alt="Belgian Waffle Co.">
+    <div class="food-details">
+        <h2>The Belgian Waffle Co.</h2>
+        <p>⭐ 4.5 </p>
+        <p>Santacruz,East</p>
+        <button onclick="bookTable()">Table booking</button>
+    </div>
+</div>
+<div class="restaurant-map-section">
+
+    <div class="map-left">
+        <h2>Look out for restaurants in Maharashtra</h2>
+        <p>Find the best restaurants across Maharashtra on Google Maps.</p>
+
+        <a href="https://www.google.com/maps/search/restaurants+in+Maharashtra" target="_blank" class="map-btn">
+            View Restaurants
+        </a>
+    </div>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

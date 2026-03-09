@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Food Ordering | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<ul class="nav">
+<li><a href="home.html"><i class="fas fa-home"></i>
+<span class="nav-item">Home</span></a></li>
+
+<li><a href="profile.html"><i class="fas fa-user"></i>
+<span class="nav-item">Profile</span></a></li>
+
+<li><a href="veg.html"><i class="fas fa-veg"></i>
+<span class="nav-item">Veg</span></a></li>
+
+<li><a href="nonveg.html"><i class="fas fa-nonveg"></i>
+<span class="nav-item">Nonveg</span></a></li>
+
+<li><a href="sweet.html"><i class="fas fa-sweet"></i>
+<span class="nav-item">Sweet n Savory</span></a></li>
+
+<li><a href="restaurant.html"><i class="fas fa-restaurant"></i>
+<span class="nav-item">Restaurant</span></a></li>
+
+</ul>
+</nav>
+
+    <!-- Profile Section -->
+    <div class="mf-profile-wrapper">
+
+        <div class="mf-profile-card">
+
+            <div class="mf-flip-container">
+                <div class="mf-flip-card">
+
+                    <!-- Girl Image -->
+                    <div class="mf-back">
+                        <img src="girl.jpeg" alt="Girl Image">
+                    </div>
+                    <!-- Boy Image -->
+                    <div class="mf-front">
+                        <img src="boy.jpeg" alt="Boy Image">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <h3>Welcome, Foodie 🍽️</h3>
+            <p>📧 foodie@gmail.com</p>
+            <p>📞 +91 9XXXXXXXXX</p>
+        </div>
+
+        <!-- Details Section -->
+        <div class="mf-details-section">
+<div class="mf-box">
+<label><h4>Username</h4> </label><br/>
+<input class="input" type="text" onkeypress="return/[a-zA-Z]/.test(event.key)" reqiured><br/>
+                </div>
+
+            <div class="mf-box">
+<label><h4>📍 Delivery Address</h4> </label><br/>
+<textarea rows="2" class="input" required></textarea><br/>
+                </div>
+
+            <div class="mf-box">
+                <label><h4>Contact no.</h4> </label><br/>
+<input class="input" type="tel" onkeypress="return/[0-9]/.test(event.key)" maxlength="10"><br/>
+                            </div>
+<div class="mf-button-group">
+<button onclick="login()" class="mf-logout-btn">LOG IN</button>
+</div>
+            <div class="mf-box">
+                <h4>🧾 Order History</h4>
+                <ul>
+                    <li>
+                        Pizza – ₹299
+                        <span class="mf-status-delivered">Delivered</span>
+                    </li>
+                    <li>
+                        Burger – ₹149
+                        <span class="mf-status-delivered">Delivered</span>
+                    </li>
+                    <li>
+                        Biryani – ₹249
+                        <span class="mf-status-onway">On the way</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mf-button-group">
+                <button onclick="editProfile()">Edit Profile</button>
+                <button class="mf-logout-btn" onclick="logout()">Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
