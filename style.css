@@ -1271,3 +1271,19 @@ background-color:#1b5e20;
 .pay-btn:hover{
 background:#218838;
 }
+@media (max-width: 600px) {
+
+.navbar{
+flex-direction: column;
+}
+
+.food-item{
+width:100%;
+}
+
+img{
+width:100%;
+height:auto;
+}
+
+}
