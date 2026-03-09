@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Premium Photo Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<ul class="nav">
+<li><a href="home.html"><i class="fas fa-home"></i>
+<span class="nav-item">Home</span></a></li>
+
+<li><a href="profile.html"><i class="fas fa-user"></i>
+<span class="nav-item">Profile</span></a></li>
+
+<li><a href="veg.html"><i class="fas fa-veg"></i>
+<span class="nav-item">Veg</span></a></li>
+
+<li><a href="nonveg.html"><i class="fas fa-nonveg"></i>
+<span class="nav-item">Nonveg</span></a></li>
+
+<li><a href="sweet.html"><i class="fas fa-sweet"></i>
+<span class="nav-item">Sweet n Savory</span></a></li>
+
+<li><a href="restaurant.html"><i class="fas fa-restaurant"></i>
+<span class="nav-item">Restaurant</span></a></li>
+
+<li class="nav-search">
+<form class="search-bar">
+<input type="search" id="searchInput" placeholder="Search..." onkeyup="searchFood()">
+<button type="submit">
+<img src="searchicon.png">
+</button>
+</form>
+</li>
+
+<a href="#" class="cart-icon">
+    <span class="cart-emoji">🛒</span>
+    <span class="cart-value">0</span>
+</a>
+</ul>
+</nav>
+<header class="top-bar">
+    <h1>Snacks and Desert Hub</h1>
+    </header>
+
+<main class="gallery-area">
+
+    <div class="product-card" data-price="500">
+        <img src="ice1.jpeg" alt="">
+        <h3>Belgian Chocolate</h3>
+        <p class="price">₹250</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="650">
+        <img src="ice2.jpeg" alt="">
+        <h3>Guava chilly icecreame</h3>
+        <p class="price">₹350</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="700">
+        <img src="ice3.jpeg" alt="">
+        <h3>Strawberry Icecream</h3>
+        <p class="price">₹150</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+<div class="product-card" data-price="700">
+        <img src="pina.webp" alt="">
+        <h3> Pina Colada </h3>
+        <p class="price">₹300</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+<div class="product-card" data-price="700">
+        <img src="punjabi.jpeg" alt="">
+        <h3> Punjabi Lassi</h3>
+        <p class="price">₹150</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+<div class="product-card" data-price="700">
+        <img src="sweet2.jpeg" alt="">
+        <h3>RajBhog</h3>
+        <p class="price">₹950</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+<div class="product-card" data-price="700">
+        <img src="sweet3.jpeg" alt="">
+        <h3>Malai Barji</h3>
+        <p class="price">₹750</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="550">
+        <img src="sweet4.jpeg" alt="">
+        <h3>Jalebi</h3>
+        <p class="price">₹450</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="900">
+        <img src="snack1.jpeg" alt="">
+        <h3>Kurkure</h3>
+        <p class="price">₹100</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="480">
+        <img src="snack2.jpeg" alt="">
+        <h3>Lays</h3>
+        <p class="price">₹150</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="720">
+        <img src="snack3.jpeg" alt="">
+        <h3>Diet Coke</h3>
+        <p class="price">₹50</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="610">
+        <img src="snack4.jpeg" alt="">
+        <h3>Mojito</h3>
+        <p class="price">₹120</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="530">
+        <img src="snack5.jpeg" alt="">
+        <h3>Spicy Chakli</h3>
+        <p class="price">₹230</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+
+    <div class="product-card" data-price="800">
+        <img src="snack6.jpeg" alt="">
+        <h3>Baklawa</h3>
+        <p class="price">₹1500</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+<div class="product-card" data-price="720">
+        <img src="rasmalai.jpeg" alt="">
+        <h3>RasMalai</h3>
+        <p class="price">₹1000</p>
+        <a href='#' class="btn"> Add to Cart </a> 
+    </div>
+</main>
+<div class="cart-tab">
+   <h1 class="cart">Your Cart</h1><br>
+   <div class="cart-list">
+   </div>
+  <div class="total-container">
+   <h4> Total: </h4>
+   <h4 class="cart-total">$0.00</h4>
+</div>
+<div class="btn-container">
+   <a href="#" class="btn close-btn"> Close </a>
+   <button class="pay-btn" onclick="showPopup()"> Payment</button>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
